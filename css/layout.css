@@ -1,0 +1,14 @@
+/* fichier de mise en page */
+
+/* style de base */
+.container {
+    padding: 1em 1.5em;
+}
+
+/* style de l'en-tete */
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
