@@ -2,6 +2,9 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -10,23 +13,23 @@
 <body>
 <div class="container">
   <header>
-    <img src="#" alt="Logo">
-    <h1>Bonjour, Gaelle ravie de te revoir</h1>
+    <h2>POLARIS</h2>
+    <h1>Bonjour, <strong>Gaelle</strong> ravie de te revoir</h1>
     <i class="fa-regular fa-bell"></i>
   </header>
   <div class="main">
     <aside>
       <div class="menu-head">
         <ul>
-        <li><a href=""><i class="fa-solid fa-table-columns"></i>Tableau de Bord</a></li>
-        <li><a href=""><i class="fa-solid fa-receipt"></i>Commandes</a></li>
-        <li><a href=""><i class="fa-solid fa-basket-shopping"></i>Produits</a></li>
-      </ul>
+          <li><a href=""><i class="fa-solid fa-table-columns"></i>Tableau de Bord</a></li>
+          <li><a href=""><i class="fa-solid fa-receipt"></i>Commandes</a></li>
+          <li><a href=""><i class="fa-solid fa-basket-shopping"></i>Produits</a></li>
+        </ul>
       </div>
       <div class="menu-foot">
         <ul>
-        <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Deconnexion</a></li>
-      </ul>
+          <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Deconnexion</a></li>
+        </ul>
       </div>
     </aside>
     <main>
@@ -34,33 +37,31 @@
         <div class="search-bar">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="search" placeholder="Recherchez un produit">
+          <button>Rechercher</button>
         </div>
         <div class="date-download">
-          <i class="fa-solid fa-calendar"></i>
-          <input type="button" value="Date">
-          <i class="fa-solid fa-right-from-bracket"></i>
-          <input type="button" value="Telecharger">
+          <input type="date" value="Date">
         </div>
       </div>
       <div class="cards">
         <div class="card">
           <p>Montant Total des pizzas</p>
-          <p>30 000 F</p>
+          <h3>30 000 F</h3>
           <p>Du <strong>01 Jan 2025</strong> au <strong>06 Fev 2025</strong></p>
         </div>
         <div class="card">
           <p>Total Boissons non-alcoolises</p>
-          <p>31 000 F</p>
+          <h3>31 000 F</h3>
           <p>Du <strong>01 Jan 2025</strong> au <strong>06 Fev 2025</strong></p>
         </div>
         <div class="card">
           <p>Total Boissons Alcoolisees</p>
-          <p>130 000 F</p>
+          <h3>130 000 F</h3>
           <p>Du <strong>01 Jan 2025</strong> au <strong>06 Fev 2025</strong></p>
         </div>
         <div class="card">
           <p>Total des Repas</p>
-          <p>250 000 F</p>
+          <h3>250 000 F</h3>
           <p>Du <strong>01 Jan 2025</strong> au <strong>06 Fev 2025</strong></p>
         </div>
       </div>
@@ -121,9 +122,9 @@
               <td>14000</td>
             </tr>
           </table>
-        </div>
+      </div>
       <div class="main-section products">
-          <div class="main-section-title products">
+          <div class="main-section-title">
             <h2>Stock des produits</h2>
             <div class="input-button">
               <input type="button" value="Details">
