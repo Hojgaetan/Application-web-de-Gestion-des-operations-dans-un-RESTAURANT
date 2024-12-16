@@ -1,90 +1,92 @@
 /* fichier de mise en page */
 
 /* style de base */
-.container {
+.container{
     padding: 1em 1.5em;
+    .container__header {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .container__main {
+        grid-template-columns: 1fr 4fr;
+        gap: 10px;
+        aside{
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
 }
 
 /* style de l'en-tete */
-header {
+
+.d-flex{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
 }
-.main {
-    display:grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 10px;
+.d-grid{
+   display:grid;
 }
 aside{
-    display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
 main{
-    display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+    .main__head{
+        grid-column:1/5;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-bottom: 50px;
+        .main__head__search__bar{
+            grid-column: 1/7;
+        }
+        .main__head__date__download{
+            grid-column: 12/13;
+        }
+    }
+    .main__cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column:1/5;
+        grid-row: 2/3;
+        margin-bottom: 50px;
+        gap: 15px;
+    }
+    .main__section--commandes{
+        grid-column:1/4;
+        grid-row: 3/4;
+        gap: 10px;
+    }
+    .main__section--serveuses{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        border: 1px solid #ffc107;
+    }
+    .main__section--products{
+        grid-column: 1/5;
+    }
 }
-main .main-head{
-    grid-column:1/5;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-bottom: 50px;
-}
-main .main-head .search-bar{
-    grid-column: 1/7;
-}
-main .main-head .date-download{
-    grid-column: 12/13;
-}
-main .cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column:1/5;
-    grid-row: 2/3;
-    margin-bottom: 50px;
-    gap: 15px;
-}
-main .commandes{
-    grid-column:1/4;
-    grid-row: 3/4;
-    display:grid;
-    gap: 10px;
-}
-main .main-section-title{
-    display: flex;
+.main__section__title{
     justify-content: space-between;
     align-items: center;
 }
 main table .tr-command{
-    display: grid;
     grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
 }
 
 table{
     width: 100%;
 }
-main .serveuse {
-    grid-column: 4/5;
-    grid-row: 3/4;
-    border: 1px solid #ffc107;
-}
 main table .tr-serveuse{
-    display: grid;
     grid-template-columns: 1fr 1fr;
 }
- td, th{
+td, th{
      display: flex;
      justify-content: space-between;
      align-items: center;
      padding: 10px;
- }
-main .products{
-    grid-column: 1/5;
 }
+
 main table .tr-product{
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }

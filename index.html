@@ -12,90 +12,90 @@
 </head>
 <body>
 <div class="container">
-  <header>
+  <header class="container__header d-flex">
     <h2>POLARIS</h2>
     <h1>Bonjour, <strong>Gaelle</strong> ravie de te revoir</h1>
     <i class="fa-regular fa-bell"></i>
   </header>
-  <div class="main">
-    <aside>
-      <div class="menu-head">
+  <div class="container__main d-grid">
+    <aside class="d-flex">
+      <div class="aside__menu--head">
         <ul>
-          <li><a href=""><i class="fa-solid fa-table-columns"></i>Tableau de Bord</a></li>
-          <li><a href=""><i class="fa-solid fa-receipt"></i>Commandes</a></li>
-          <li><a href=""><i class="fa-solid fa-basket-shopping"></i>Produits</a></li>
+          <li class="p-15 brd-rad-15 bg-light brd-style m-b"><a href="index.html"><i class="fa-solid fa-table-columns p-10"></i>Tableau de Bord</a></li>
+          <li class="p-15 brd-rad-15 bg-light brd-style m-b"><a href="pages/commandes.html"><i class="fa-solid fa-receipt p-10"></i>Commandes</a></li>
+          <li class="p-15 brd-rad-15 bg-light brd-style m-b"><a href="pages/produits.html"><i class="fa-solid fa-basket-shopping p-10"></i>Produits</a></li>
         </ul>
       </div>
-      <div class="menu-foot">
+      <div class="aside__menu--foot">
         <ul>
-          <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Deconnexion</a></li>
+          <li class="p-15 brd-rad-15 bg-light brd-style"><a href=""><i class="fa-solid fa-right-from-bracket p-10"></i>Deconnexion</a></li>
         </ul>
       </div>
     </aside>
-    <main>
-      <div class="main-head">
-        <div class="search-bar">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="search" placeholder="Recherchez un produit">
-          <button>Rechercher</button>
+    <main class="d-grid">
+      <div class="main__head">
+        <div class="main__head__search__bar display-row brd-style bg-light brd-rad-10">
+          <i class="fa-solid fa-magnifying-glass p-10"></i>
+          <input type="search" placeholder="Recherchez un produit" class="brd-none bg-light">
+          <button class="p-10 bg-black ">Rechercher</button>
         </div>
-        <div class="date-download">
-          <input type="date" value="Date">
+        <div class="main__head__date__download display-row p-10 bg-light brd-style p-10 brd-none bg-light">
+          <input type="date" value="Date" class="brd-none">
         </div>
       </div>
-      <div class="cards">
-        <div class="card">
+      <div class="main__cards d-grid">
+        <div class="main__cards__card display-col display-row p-10 bg-light p-15 b-shadow brd-rad-15">
           <p>Montant Total des pizzas</p>
           <h3>30 000 F</h3>
           <p>Du <strong>01 Jan 2025</strong> au <strong>06 Fev 2025</strong></p>
         </div>
-        <div class="card">
+        <div class="main__cards__card display-col display-row p-10 bg-light p-15 b-shadow brd-rad-15">
           <p>Total Boissons non-alcoolises</p>
           <h3>31 000 F</h3>
           <p>Du <strong>01 Jan 2025</strong> au <strong>06 Fev 2025</strong></p>
         </div>
-        <div class="card">
+        <div class="main__cards__card display-col display-row p-10 bg-light p-15 b-shadow brd-rad-15">
           <p>Total Boissons Alcoolisees</p>
           <h3>130 000 F</h3>
           <p>Du <strong>01 Jan 2025</strong> au <strong>06 Fev 2025</strong></p>
         </div>
-        <div class="card">
+        <div class="main__cards__card display-col display-row p-10 bg-light p-15 b-shadow brd-rad-15">
           <p>Total des Repas</p>
           <h3>250 000 F</h3>
           <p>Du <strong>01 Jan 2025</strong> au <strong>06 Fev 2025</strong></p>
         </div>
       </div>
-      <div class="main-section commandes">
-          <div class="main-section-title">
+      <div class="main__section main__section--commandes bg-light brd-rad-15 p-15 b-shadow d-grid">
+          <div class="main__section__title d-flex">
             <h2>Historique des commandes</h2>
-            <div class="input-button">
+            <div class="input-button p-15 brd-rad-10 bg-btn">
               <input type="button" value="Details">
               <i class="fa-solid fa-forward-step"></i>
             </div>
           </div>
           <table>
-            <tr class="tr-command">
+            <tr class="tr-command d-grid">
               <th>Commande</th>
               <th>Description</th>
               <th>Serveuse</th>
               <th>Heure</th>
               <th>Montant</th>
             </tr>
-            <tr class="tr-command">
+            <tr class="tr-command d-grid">
               <td>1</td>
               <td>01 Shawarma poulet, 03 pots de glaces, 02 pizza XXL</td>
               <td>Danielle</td>
               <td>11:04</td>
               <td>14500</td>
             </tr>
-            <tr class="tr-command">
+            <tr class="tr-command d-grid">
               <td>2</td>
               <td>03 pots de glaces</td>
               <td>Danielle</td>
               <td>13:31</td>
               <td>4500</td>
             </tr>
-            <tr class="tr-command">
+            <tr class="tr-command d-grid">
               <td>3</td>
               <td>01 pizza POLARIS</td>
               <td>Gaelle</td>
@@ -104,35 +104,35 @@
             </tr>
           </table>
       </div>
-      <div class="main-section serveuse">
-          <div class="main-section-title">
+      <div class="main__section main__section--serveuses bg-light brd-rad-15 p-15 b-shadow">
+          <div class="main__section__title">
             <h2>Serveuses actives</h2>
           </div>
           <table>
-            <tr class="tr-serveuse">
+            <tr class="tr-serveuse d-grid">
               <th>Nom</th>
               <th>Ventes</th>
             </tr>
-            <tr class="tr-serveuse">
+            <tr class="tr-serveuse d-grid">
               <td>Danielle</td>
               <td>19000</td>
             </tr>
-            <tr class="tr-serveuse">
+            <tr class="tr-serveuse d-grid">
               <td>Gaelle</td>
               <td>14000</td>
             </tr>
           </table>
       </div>
-      <div class="main-section products">
-          <div class="main-section-title">
+      <div class="main__section main__section--products bg-light brd-rad-15 p-15 b-shadow products">
+          <div class="main__section__title d-flex">
             <h2>Stock des produits</h2>
-            <div class="input-button">
+            <div class="input-button p-15 brd-rad-10 bg-btn">
               <input type="button" value="Details">
               <i class="fa-solid fa-forward-step"></i>
             </div>
           </div>
           <table>
-            <tr class="tr-product">
+            <tr class="tr-product d-grid">
               <th>Designation</th>
               <th>S.Initial</th>
               <th>Entree</th>
@@ -141,7 +141,7 @@
               <th>P.U</th>
               <th>Total</th>
             </tr>
-            <tr class="tr-product">
+            <tr class="tr-product d-grid">
               <td>Eau GM</td>
               <td>09</td>
               <td>0</td>
@@ -150,7 +150,7 @@
               <td>1000</td>
               <td>5000</td>
             </tr>
-            <tr class="tr-product">
+            <tr class="tr-product d-grid">
               <td>Eau PM</td>
               <td>25</td>
               <td>0</td>
@@ -159,7 +159,7 @@
               <td>500</td>
               <td>2000</td>
             </tr>
-            <tr class="tr-product">
+            <tr class="tr-product d-grid">
               <td>Coca Cola</td>
               <td>24</td>
               <td>0</td>
